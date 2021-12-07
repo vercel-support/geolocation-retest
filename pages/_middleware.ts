@@ -6,6 +6,7 @@ export async function middleware(req: NextRequest) {
   const country = geo.country || "US";
   const city = geo.city || "San Francisco";
   const region = geo.region || "CA";
+  console.log("being logging....");
 
   console.log("HEADERS LOGGED: ", req.headers);
 
